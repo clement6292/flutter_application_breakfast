@@ -7,13 +7,15 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return appBar();
+    var scaffold = Scaffold(
+      // backgroundColor: Colors.blue,
+      appBar: appBar(),
+    );
+    return scaffold;
   }
 
-  Scaffold appBar() {
-    return Scaffold(
-    // backgroundColor: Colors.blue,
-    appBar: AppBar(
+  AppBar appBar() {
+    return AppBar(
       title: const Text(
         'Breakfast',
         style: TextStyle(
@@ -61,7 +63,6 @@ class HomePage extends StatelessWidget {
         )
       ),
       ],
-    ),
-  );
+    );
   }
 }
